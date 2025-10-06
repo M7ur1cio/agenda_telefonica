@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VentanaAgenda</class>
+ <widget class="QWidget" name="VentanaAgenda">
+  <property name="windowTitle">
+   <string>Agenda Telefónica BST</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_top">
+     <item>
+      <widget class="QLineEdit" name="nombre_input">
+       <property name="placeholderText">
+        <string>Nombre</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="tel_input">
+       <property name="placeholderText">
+        <string>Teléfono</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_buttons">
+     <item>
+      <widget class="QPushButton" name="btn_insertar">
+       <property name="text">
+        <string>Insertar / Actualizar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_buscar">
+       <property name="text">
+        <string>Buscar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_eliminar">
+       <property name="text">
+        <string>Eliminar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_listar">
+       <property name="text">
+        <string>Listar todos</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_exportar_inorder">
+       <property name="text">
+        <string>Exportar Inorder CSV</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_exportar_preorder">
+       <property name="text">
+        <string>Exportar Preorder CSV</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_exportar_postorder">
+       <property name="text">
+        <string>Exportar Postorder CSV</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_mostrar_arbol">
+       <property name="text">
+        <string>Mostrar Árbol</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_prefijo">
+     <item>
+      <widget class="QLabel" name="label_prefijo">
+       <property name="text">
+        <string>Prefijo:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="prefijo_input">
+       <property name="placeholderText">
+        <string>Buscar por prefijo (ej. 'An')</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_buscar_prefijo">
+       <property name="text">
+        <string>Buscar prefijo</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tabla">
+     <property name="columnCount">
+      <number>2</number>
+     </property>
+     <property name="horizontalHeaderLabels">
+      <stringlist>
+       <string>Nombre</string>
+       <string>Teléfono</string>
+      </stringlist>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

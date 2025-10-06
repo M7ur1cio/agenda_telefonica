@@ -1,0 +1,6 @@
+nombre,telefono
+Ana,6000-0001
+Bruno,6000-0002
+Carla,6000-0003
+Daniel,6000-0004
+Elena,6000-0005
